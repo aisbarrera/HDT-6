@@ -33,4 +33,23 @@ public class HDT6 {
 		System.out.println("3. LinkedHashSet\n");
 		System.out.println("Ingrese el numero de su eleccion:\n");
     }
+    
+    public static int userInput(){
+		/**
+		 * Scanner for user input.
+		 */
+		Scanner in = new Scanner(System.in);
+		/**
+		 * Variable to store user input.
+		 */
+		int entrada=0;
+		try{
+			entrada = in.nextInt();
+		}
+		catch(InputMismatchException e){
+			JOptionPane.showMessageDialog(null, "Ingreso invalido", "ERROR", JOptionPane.ERROR_MESSAGE);
+			System.exit(0);
+		}
+		return entrada;
+	}
 }
