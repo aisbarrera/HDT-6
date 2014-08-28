@@ -22,6 +22,17 @@ public class HDT6 {
         // TODO code application logic here
         menu();
         int entrada = userInput();
+        
+        switch(entrada){
+		case(1):
+			
+		break;
+		case(2):
+			
+		break;
+		case(3):
+        }
+        
     }
     
     
