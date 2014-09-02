@@ -38,9 +38,9 @@ public class HDT6 {
     public static void menu(){
 		System.out.println("\n" + "***---***Bienvenido al programa para identificar desarrolladores**---***" + "\n\n");
 		System.out.println("Escoja una implementacion:\n");
-		System.out.println("1. HashSet\n");
-		System.out.println("2. TreeSet\n");
-		System.out.println("3. LinkedHashSet\n");
+		System.out.println("1) HashSet\n");
+		System.out.println("2) TreeSet\n");
+		System.out.println("3) LinkedHashSet\n");
 		System.out.println("Ingrese el numero de su eleccion:\n");
     }
     
