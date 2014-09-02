@@ -25,29 +25,35 @@ public class HDT6 {
         Scanner s = new Scanner(System.in);
         String implem = s.next();
         SetC miSet = new SetC(implem);
+        int x = 1;
+       do{
         menu();
         String entrada = userInput();
         switch(entrada){
              case "1":
-                 String nom = Programador();
+                  String nom = Programador();
                   String tipo = tipo();
                   miSet.add(nom,tipo);
+                  otroTipo(nom, miSet);
+                  otroTipo(nom, miSet);
                   break;
               case "2":
-                 miSet.Preguntas();
+                 System.out.println("\n"+miSet.Preguntas()+"\n");
                   break;
               case "3":
                   System.out.println("Gracias por utilizar el sistema");
+                  x = 3;
                   break;
         }  
+    }while(x != 3);
     }
     
     
     public static void menu(){
 	System.out.println("Eliga el numero de la accion que desea realizar");
-	System.out.println("1.Ingresar un programador");
-	System.out.println("2.Respuesta a preguntas");
-	System.out.println("3.Salir");
+	System.out.println("    1.Ingresar un programador");
+	System.out.println("    2.Respuesta a preguntas");
+	System.out.println("    3.Salir");
     }
     
     
@@ -59,9 +65,23 @@ public class HDT6 {
     }
     public static String tipo(){
         Scanner s = new Scanner(System.in);
-        System.out.println("Ingrese la letra de la especialidad:\nEspecialidades:\na) Java\nb) Web\nc)Celular");
+        System.out.println("Ingrese la letra de la especialidad:\nEspecialidades:\n    a) Java\n    b) Web\n    c)Celular");
         String tipo = s.next();
         return tipo;
+    }
+    
+    public static void otroTipo(String nom, SetC miSet){
+        Scanner s = new Scanner(System.in);
+        System.out.println("¿Desea agregar otra especialidad?\n(si,no)");
+        String ans = s.next();
+        switch(ans){
+            case "si":
+                String ot = tipo();
+                miSet.add(nom, ot);
+                break;
+            case "no":
+                break;
+        }
     }
     
     public static String userInput(){
