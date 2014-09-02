@@ -44,7 +44,7 @@ public class SetC {
     }
    public String Preguntas(){
        //pregunta 5: El conjunto de desarrolladores Java es un subconjunto de Desarrolladores Web. 
-       if(Java.containsAll(Web)){
+       if(Web.containsAll(Java)){
            ans5 = "Si";
        }else{
            ans5 = "no";
