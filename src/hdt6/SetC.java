@@ -90,6 +90,6 @@ public class SetC {
        list = new ArrayList(p6);
        Collections.sort(list);
           
-       return "1.Desarrolladores con experiencia en Java, web y celulares: \n" + p1.toString() + "\n2.Desarrolladores con experiencia en Java pero que no tengan experiencia en web: \n" + p2.toString() + "\n3.Desarrolladores con experiencia en Web y Celulares pero que no tengan experiencia en java: \n" + p3.toString() + "\n4.Desarrolladores con experiencia en Web o Celulares, pero que no tengan experiencia en java: \n" + p4.toString() + "\n5.El conjunto de desarrolladores Java es un subconjunto de Desarrolladores Web: \n" + ans5 + "\n6.El conjunto que tenga la cantidad más grande de desarrolladores: \n" + ans6 + "\n" + p6.toString()+ "\nen orden ascendente: \n" + list.toString();
+       return "1.Desarrolladores con experiencia en Java, web y celulares: \n" + p1.toString() + "\n2.Desarrolladores con experiencia en Java pero que no tengan experiencia en web: \n" + p2.toString() + "\n3.Desarrolladores con experiencia en Web y Celulares pero que no tengan experiencia en java: \n" + p3.toString() + "\n4.Desarrolladores con experiencia en Web o Celulares, pero que no tengan experiencia en java: \n" + p4.toString() + "\n5.El conjunto de desarrolladores Java es un subconjunto de Desarrolladores Web: \n" + ans5 + "\n6.El conjunto que tenga la cantidad más grande de desarrolladores: \n" + ans6 + "\n" + p6.toString()+ "\nEn orden ascendente: \n" + list.toString();
    } 
 }
