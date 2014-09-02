@@ -59,7 +59,7 @@ public class HDT6 {
     
     public static String Programador(){
         Scanner s = new Scanner(System.in);
-        System.out.println("Ingrese el nombre del progrmador");
+        System.out.println("Ingrese el nombre del programador");
         String nom = s.next();
         return nom;
     }

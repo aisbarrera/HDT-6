@@ -4,9 +4,10 @@
  */
 package hdt6;
 import java.util.*;
+import static java.util.Arrays.sort;
 /**
  *
- * @author andreabarrera
+ * @author Andrea Barrera/Santiago González
  */
 public class SetC {
     private SetFactory<String> set;
@@ -72,19 +73,28 @@ public class SetC {
            if(SW>SC){
                p6.addAll(Web);
                ans6 = "Desarrolladores Web";
+               p7.addAll(Web);
+               sort(p7.toArray());
            }else{
                p6.addAll(Cel);
                ans6 = "Desarrolladores de Celulares";
+               p7.addAll(Cel);
+               sort(p7.toArray());
            }
        }else{
            if(SJ>SC){
                p6.addAll(Java);
                ans6 = "Desarrolladores Java";
+               p7.addAll(Java);
+               sort(p7.toArray());
            }else{
                p6.addAll(Cel);
                ans6 = "Desarrolladores de Celulares";
+               p7.addAll(Cel);
+               sort(p7.toArray());
            }
+        
        }
-       return "1.Desarrolladores con experiencia en Java, web y celulares: \n" + p1.toString() + "\n2.Desarrolladores con experiencia en Java pero que no tengan experiencia en web: \n" + p2.toString() + "\n3.Desarrolladores con experiencia en Web y Celulares pero que no tengan experiencia en java: \n" + p3.toString() + "\n4.Desarrolladores con experiencia en Web o Celulares, pero que no tengan experiencia en java: \n" + p4.toString() + "\n5.El conjunto de desarrolladores Java es un subconjunto de Desarrolladores Web: \n" + ans5 + "\n6.El conjunto que tenga la cantidad más grande de desarrolladores: \n" + ans6 + "\n" + p6.toString();
+       return "1.Desarrolladores con experiencia en Java, web y celulares: \n" + p1.toString() + "\n2.Desarrolladores con experiencia en Java pero que no tengan experiencia en web: \n" + p2.toString() + "\n3.Desarrolladores con experiencia en Web y Celulares pero que no tengan experiencia en java: \n" + p3.toString() + "\n4.Desarrolladores con experiencia en Web o Celulares, pero que no tengan experiencia en java: \n" + p4.toString() + "\n5.El conjunto de desarrolladores Java es un subconjunto de Desarrolladores Web: \n" + ans5 + "\n6.El conjunto que tenga la cantidad más grande de desarrolladores: \n" + ans6 + "\n" + p6.toString() + "\n7.El conjunto que tenga la cantidad más grande de desarrolladores ordenado: \n" + ans6 + "\n" + p7.toString();
    } 
 }
