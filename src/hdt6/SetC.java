@@ -33,4 +33,7 @@ public class SetC {
                   break;
           }
     }
+   public String Preguntas(){
+       return "todavia nada";
+   } 
 }
