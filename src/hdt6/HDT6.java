@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author andreabarrera
+ * @author Andrea Barrera/Santiago González
  */
 public class HDT6 {
 
