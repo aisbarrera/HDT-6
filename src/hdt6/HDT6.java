@@ -22,17 +22,15 @@ public class HDT6 {
         // TODO code application logic here
         menu();
         int entrada = userInput();
+        SetC miSet = new SetC(entrada+"");
+        Scanner s = new Scanner(System.in);
+        System.out.println("Ingrese el nombre del progrmador");
+        String nom = s.next();
+        System.out.println("Ingrese su especialidad:\nEspecialidades:\na) Java\nb) Web\nc)Celular");
+        String tipo = s.next();
+        miSet.add(nom,tipo);
         
-        switch(entrada){
-		case(1):
-			
-		break;
-		case(2):
-			
-		break;
-		case(3):
-                break;
-        }
+       
         
     }
     
