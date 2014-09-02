@@ -6,7 +6,7 @@ package hdt6;
 import java.util.*;
 /**
  *
- * @author andreabarrera
+ * @author Andrea Barrera/Santiago González
  */
 public class SetFactory<E> {
     private Set set;
